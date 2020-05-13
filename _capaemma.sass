@@ -1,0 +1,46 @@
+.capa
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(0,0,0,.9)
+    width: 100%
+    height: 100vh
+    display: none
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+.capa.activo
+    display: flex
+
+.capa
+    img
+        max-width: 100%
+    .descripcion
+        display: block
+        background: $primary-color
+        padding: 20px
+        text-align: center
+        margin: auto
+        border-radius: 10px
+        max-width: 80%
+        color: $secondary-color
+
+.contenedor-img
+    position: relative
+
+.capa #btn-cerrar-img
+    background: none
+    font-size: 20px
+    color: #fff
+    border: none
+    cursor: pointer
+    position: absolute
+    right: -20px
+    top: -20px
+
+
+        
+

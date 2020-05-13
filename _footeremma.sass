@@ -1,0 +1,45 @@
+footer
+    .redes
+        display: flex
+        align-content: center
+        justify-content: center
+        padding: 20px
+        flex-wrap: wrap
+        a
+            display: block
+            width: 60px
+            height: 60px
+            background: #000000
+            color: #ffffff
+            margin: 20px
+            text-align: center
+            border-radius: 100px
+            transition: .3s ease all
+            i
+                font-size: 20px
+                line-height: 60px
+        .twitter
+            background: #1da1f2
+        .instagram
+            background: #c13584
+        .facebook
+            background: #3b5998
+    .contenedor-icono:hover a
+        animation: icono .5s ease
+
+@keyframes icono
+    0%
+        transform: rotate3d(0,0,0,0)
+    100%
+        transform: rotate3d(0,1,0, 360deg)
+
+footer
+    .make
+        margin-bottom: 40px
+        text-align: center
+        font-size: 14px
+        font-family: Arial, Helvetica, sans-serif
+        color: $third-color
+
+
+    

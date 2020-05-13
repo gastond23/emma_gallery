@@ -1,0 +1,48 @@
+$font: 'Dancing Script', cursive
+$primary-color: rgb(238,174,202)
+$gradient: radial-gradient(circle, rgba(238,174,202,1) 37%, rgba(148,187,233,1) 100%)
+$secondary-color: #FF01FF
+$third-color: #6f00ff
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: $gradient
+    font-family: $font
+
+a
+    text-decoration: none
+
+.contenedor
+    width: 90%
+    max-width: 800px
+    margin: auto
+
+//Header
+
+@import _emmaheader.sass
+
+//Galeria
+
+@import _emmagaleria.sass
+
+//Capa
+
+@import _capaemma.sass
+
+//Footer
+
+@import _footeremma.sass
+
+//Media query desktop 100%
+
+@media screen and ( min-width: 700px )
+    .grid .item
+        width: calc(33.333333% - 20px)
+    header .barra-busqueda
+        width: 70%
+    
+
